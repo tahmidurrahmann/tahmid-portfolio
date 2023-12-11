@@ -22,12 +22,13 @@ const Contact = () => {
 
     return (
         <div id="contact">
-            <h1 className="uppercase text-[#c60678] text-center font-semibold text-xl pt-12 md:pt-24">Get in touch</h1>
+            <h1 className="uppercase text-[#c60678] text-center font-semibold text-xl pt-24 md:pt-40">Get in touch</h1>
             <p className="text-2xl md:text-5xl font-bold text-center py-4">Let's discuss <br /> about an project!</p>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-16 max-w-screen-xl mx-auto text-white my-16 md:px-6">
                 <div>
+                    <h1 className="text-2xl text-center md:text-left md:text-3xl font-bold py-6">Message me</h1>
                     <form ref={form} onSubmit={sendEmail} className="bg-[#09101A] p-8">
-                        <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+                        <div className="flex flex-col md:flex-row md:gap-12 gap-6 justify-center items-center">
                             <label
                                 htmlFor="UserName"
                                 className="relative block overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
