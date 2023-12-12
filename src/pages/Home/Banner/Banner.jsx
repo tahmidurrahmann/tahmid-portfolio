@@ -1,19 +1,8 @@
 import { GrDownload } from "react-icons/gr";
 import "./Banner.css";
-import pdf from "../../../assets/Resume - Google Docs.pdf";
 import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
-
-    const handleDownloadResume = () => {
-        const pdfPath = pdf;
-        const link = document.createElement('a');
-        link.href = pdfPath;
-        link.download = 'Tahmidur Rahman Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
 
     return (
         <div className="background" id="home">
@@ -24,7 +13,7 @@ const Banner = () => {
                         <TypeAnimation
                             sequence={[
                                 'Frontend Alchemist : Transforming Vision into Interactive Reality.',
-                                1000, 
+                                1000,
                                 'Code Composer : Crafting Aesthetically Pleasing User Journeys.',
                                 1000,
                                 'Pixel Perfect Developer : Bringing Designs to Life with Precision.',
@@ -33,11 +22,14 @@ const Banner = () => {
                                 1000
                             ]}
                             wrapper="span"
+                            className="text-[#c60678] font-semibold"
                             speed={50}
                             style={{ fontSize: '2em', display: 'inline-block' }}
                             repeat={Infinity}
                         />
-                        <button onClick={handleDownloadResume} className="flex gap-3 justify-center items-center py-3 px-6 rounded-full bg-[#c60678] hover:text-[#c60678] border text-white border-[#c60678] hover:bg-[#09101a]">Download Resume <GrDownload /></button>
+                        <div className="flex">
+                            <a href="https://drive.google.com/uc?export=download&id=1Vgbx0G83EJLYEIjQm048Mh0mgdzEhQYN" className="flex gap-3 justify-center items-center py-3 px-6 rounded-full bg-[#c60678] hover:text-[#c60678] border text-white border-[#c60678] hover:bg-[#09101a]">Download Resume <GrDownload /></a>
+                        </div>
                     </div>
                     <div>
                         <img className="rounded-full border-x-transparent border-y-[#c60678]  border-8 w-96 lg:w-full" src="https://i.ibb.co/Nr7XXRX/270224004-3140648616261730-993033304660391605-n.jpg" alt="" />

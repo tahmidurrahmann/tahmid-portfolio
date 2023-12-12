@@ -23,10 +23,6 @@ const Drawer = () => {
                 smooth={true}
                 offset={50}
                 duration={500} className="hover:text-[#c60678]">Education</Link>
-            <Link to="experiences" spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} className="hover:text-[#c60678]">Experiences</Link>
             <Link to="contact" spy={true}
                 smooth={true}
                 offset={50}
