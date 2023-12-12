@@ -12,13 +12,13 @@ const Banner = () => {
                         <h1 className="text-2xl md:text-4xl font-extrabold text-white">Hello, I'm <br /><span className="text-4xl md:text-6xl">Tahmidur Rahman</span></h1>
                         <TypeAnimation
                             sequence={[
-                                'Frontend Alchemist : Transforming Vision into Interactive Reality.',
+                                'Transforming Vision into Interactive Reality.',
                                 1000,
-                                'Code Composer : Crafting Aesthetically Pleasing User Journeys.',
+                                'Crafting Aesthetically Pleasing User Journeys.',
                                 1000,
-                                'Pixel Perfect Developer : Bringing Designs to Life with Precision.',
+                                'Bringing Designs to Life with Precision.',
                                 1000,
-                                'Navigating the Digital Frontier : Where Creativity Meets Code.',
+                                'Where Creativity Meets Code.',
                                 1000
                             ]}
                             wrapper="span"
