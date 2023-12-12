@@ -1,11 +1,12 @@
 import Heading from "../../shared/Heading/Heading";
+import { motion } from "framer-motion";
 
 const Education = () => {
     return (
         <div id="education" className="max-w-screen-xl mx-auto">
             <Heading title="my education & experiences"></Heading>
             <div className="flex flex-col lg:flex-row gap-6 md:gap-0 px-6 lg:px-0">
-                <div>
+                <motion.div initial={{ y: 150 }} animate={{ y: 0 }} transition={{ duration: "8", delay: "0" }}>
                     <h1 className="text-center font-semibold text-xl py-4 md:text-3xl">Education</h1>
                     <div>
                         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -58,10 +59,10 @@ const Education = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </motion.div>
                 <div className="space-y-3">
                     <h1 className="text-center font-semibold text-xl py-4 md:text-3xl">Experiences</h1>
-                    <div>
+                    <motion.div initial={{ y: -150 }} animate={{ y: 0 }} transition={{ duration: "8", delay: "0" }}>
                         <time className="font-mono italic">November 2023 - Present</time>
                         <div className="text-lg font-black">Freelance Frontend Developer</div>
                         <div className="timeline-end md:text-start mb-10">
@@ -70,7 +71,7 @@ const Education = () => {
                             Implementing best practices in web development to ensure code quality, performance, and scalability.
                             Continuously expanding technical skill set through self-directed learning and staying updated on industry trends.
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

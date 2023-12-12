@@ -1,4 +1,5 @@
 import Heading from "../../shared/Heading/Heading";
+import { motion } from "framer-motion";
 
 const Skills = () => {
     return (
@@ -6,7 +7,7 @@ const Skills = () => {
             <Heading title="My Skills"></Heading>
             <div className="max-w-screen-xl mx-auto px-12 lg:px-0">
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-24">
-                    <div className="flex flex-col gap-4">
+                    <motion.div initial={{ y: -150 }} animate={{ y: 0 }} transition={{ duration: "6", delay: "0" }} className="flex flex-col gap-4">
                         <div className="flex justify-center items-center gap-12">
                             <img src="https://i.ibb.co/k0wwS3z/HTML.png" />
                             <div className="flex flex-col justify-center items-center gap-4">
@@ -35,8 +36,8 @@ const Skills = () => {
                                 <progress className="progress bg-white progress-error w-52 md:w-96" value="70" max="100"></progress>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex flex-col gap-4">
+                    </motion.div>
+                    <motion.div initial={{ y: 150 }} animate={{ y: 0 }} transition={{ duration: "6", delay: "0" }} className="flex flex-col gap-4">
                         <div className="flex justify-center items-center gap-12">
                             <img src="https://i.ibb.co/Bs3RD3Z/tailwind.png" />
                             <div className="flex flex-col justify-center items-center gap-4">
@@ -65,15 +66,15 @@ const Skills = () => {
                                 <progress className="progress bg-white progress-error w-52 md:w-96" value="50" max="100"></progress>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className="flex justify-start items-center gap-12 mt-8">
+                <motion.div initial={{ y: -150 }} animate={{ y: 0 }} transition={{ duration: "6", delay: "0" }} className="flex justify-start items-center gap-12 mt-8">
                         <img src="https://i.ibb.co/BcgLQ58/mongo.png" />
                         <div className="flex flex-col justify-center items-center gap-4">
                             <p className="text-xl font-bold">65%</p>
                             <progress className="progress bg-white progress-error w-52 md:w-96" value="65" max="100"></progress>
                         </div>
-                    </div>
+                    </motion.div>
             </div>
         </div>
     );
