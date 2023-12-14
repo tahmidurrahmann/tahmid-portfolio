@@ -24,7 +24,7 @@ const Contact = () => {
     return (
         <div id="contact">
             <h1 className="uppercase text-[#c60678] text-center font-semibold text-xl pt-24 md:pt-40">Get in touch</h1>
-            <p className="text-2xl md:text-5xl font-bold text-center py-4">Let's discuss <br /> about an project!</p>
+            <p className="text-2xl md:text-5xl font-bold text-center py-4">Let's discuss <br /> about a project!</p>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-16 max-w-screen-xl mx-auto text-white my-16 md:px-6">
                 <motion.div initial={{ y: 150 }} animate={{ y: 0 }} transition={{ duration: "10", delay: "0" }}>
                     <h1 className="text-2xl text-center md:text-left md:text-3xl font-bold py-6">Message me</h1>
@@ -39,7 +39,7 @@ const Contact = () => {
                                     id="UserName"
                                     name="user_name"
                                     placeholder="Your Name"
-                                    className="peer h-8 w-72 border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                                    className="peer h-8 w-72 border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" required
                                 />
                                 <span
                                     className="absolute left-0 top-2 -translate-y-1/2 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs"
@@ -57,7 +57,7 @@ const Contact = () => {
                                     id="UserEmail"
                                     name="user_email"
                                     placeholder="Your Email"
-                                    className="peer h-8 w-72 border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                                    className="peer h-8 w-72 border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" required
                                 />
                                 <span
                                     className="absolute left-0 top-2 -translate-y-1/2 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs"
@@ -77,7 +77,7 @@ const Contact = () => {
                                     id="subject"
                                     name="subject"
                                     placeholder="Subject Field"
-                                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" required
                                 />
                                 <span
                                     className="absolute left-0 top-2 -translate-y-1/2 text-xs transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs"
@@ -95,7 +95,7 @@ const Contact = () => {
                                     name="message"
                                     className="w-full resize-none border-x-0 border-t-0 border-gray-200 bg-[#09101A] p-4 align-top sm:text-sm"
                                     rows="8"
-                                    placeholder="Message Field"
+                                    placeholder="Message Field" required
                                 ></textarea>
                             </div>
                         </div>
