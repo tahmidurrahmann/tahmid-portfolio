@@ -18,7 +18,7 @@ const About = () => {
                     <p className="flex gap-6 items-center"><FaWhatsapp className="text-[#c60678]" size={26}></FaWhatsapp><span className="flex flex-col gap-2"><span className="font-bold">Whatsapp</span><span>+8801843821277</span></span></p>
                     <p className="flex gap-6 items-center"><FaLocationDot className="text-[#c60678]" size={26}></FaLocationDot><span className="flex flex-col gap-2"><span className="font-bold">Location</span><span>28/2 Shamibagh Road, Dhaka</span></span></p>
                     <p className="flex gap-6 items-center"><MdEmail className="text-[#c60678]" size={26}></MdEmail><span className="flex flex-col gap-2"><span className="font-bold">Email</span><span> tahmidurahmann@gmail.com</span></span></p>
-                    <button className="py-3 px-6 font-bold text-xl rounded-full bg-[#c60678] hover:text-[#c60678] border text-white border-[#c60678] hover:bg-[#09101a]"><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/tahmidur-rahmann/" className="flex gap-3 justify-center items-center">LinkedIn<FaLinkedin size={23}></FaLinkedin></a></button>
+                    <button className="flex gap-2 md:gap-3 justify-center items-center py-2 px-4 md:py-3 md:px-6 rounded-full bg-[#c60678] hover:text-[#c60678] border text-white border-[#c60678] hover:bg-[#09101a]"><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/tahmidur-rahmann/" className="flex gap-3 justify-center items-center">LinkedIn<FaLinkedin size={23}></FaLinkedin></a></button>
                 </motion.div>
             </div>
         </div>

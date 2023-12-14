@@ -16,7 +16,9 @@ const Skills = () => {
                         <img src="https://i.ibb.co/1X22qrB/firebase.png" />
                         <img src="https://i.ibb.co/VM0Nntk/node.png" />
                         <img src="https://i.ibb.co/2NHC17p/express.png" />
-                        <img src="https://i.ibb.co/BcgLQ58/mongo.png" />
+                        <div className="pr-8 md:pr-32">
+                            <img src="https://i.ibb.co/BcgLQ58/mongo.png" />
+                        </div>
                     </div>
                 </Marquee>
             </div>
