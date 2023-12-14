@@ -1,6 +1,6 @@
 const Heading = ({title}) => {
     return (
-        <div className="flex justify-center items-center pt-24 pb-24 lg:pt-40 uppercase">
+        <div className="flex justify-center items-center py-16 lg:pt-40 uppercase">
             <h1 className="text-[#c60678] text-2xl font-semibold">{title}</h1>
         </div>
     );

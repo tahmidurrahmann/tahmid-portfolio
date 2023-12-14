@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 
 const Drawer = () => {
     return (
-        <div className="menu p-4 w-80 min-h-full flex justify-center items-center gap-6 font-permanent text-white bg-black">
+        <div className="menu p-4 w-72 min-h-full flex justify-center items-center gap-6 font-permanent text-white bg-black">
             <Link to="home" spy={true}
                 smooth={true}
                 offset={50}
