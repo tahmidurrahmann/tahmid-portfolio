@@ -25,14 +25,15 @@ const Banner = () => {
                             wrapper="span"
                             className="text-[#c60678] font-semibold text-xl md:text-2xl lg:text-3xl"
                             speed={50}
-                            style={{ display: 'inline-block'}}
+                            style={{ display: 'inline-block' }}
                             repeat={Infinity}
                         />
-                        <div className="flex">
-                            <a href="https://drive.google.com/uc?export=download&id=1Vgbx0G83EJLYEIjQm048Mh0mgdzEhQYN" className="flex gap-2 md:gap-3 justify-center items-center py-2 px-4 md:py-3 md:px-6 rounded-full bg-[#c60678] hover:text-[#c60678] border text-white border-[#c60678] hover:bg-[#09101a]">Download Resume <GrDownload /></a>
+                        <div>
+                            <a href="https://drive.google.com/uc?export=download&id=1Vgbx0G83EJLYEIjQm048Mh0mgdzEhQYN" className="butn"><i className="animation"></i>Download Resume <GrDownload /><i className="animation"></i>
+                            </a>
                         </div>
                     </div>
-                    <motion.div initial={{ y: 150 }} animate={{ y: 0 }} transition={{ duration: "2", delay: "0"}}>
+                    <motion.div initial={{ y: 150 }} animate={{ y: 0 }} transition={{ duration: "2", delay: "0" }}>
                         <img className="rounded-full border-x-transparent border-y-[#c60678]  border-8 w-60 md:w-72 lg:w-full" src="https://i.ibb.co/Nr7XXRX/270224004-3140648616261730-993033304660391605-n.jpg" alt="" />
                     </motion.div>
                 </div>

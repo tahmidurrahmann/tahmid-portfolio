@@ -20,10 +20,7 @@ const Education = () => {
                                     <p className="text-sm">Currently pursuing a comprehensive BSc program with a focus on Computer Science and Engineering at City College, Dhaka.
                                     Gaining a solid foundation in core computer science principles, algorithms, and data structures.
                                     Actively participating in coursework covering a range of topics including software engineering, databases, and web development.
-                                    Engaging in hands-on projects that apply theoretical concepts to real-world scenarios, fostering practical problem-solving skills.
-                                    Collaborating with peers on group assignments to enhance teamwork and communication abilities.
-                                    Taking advantage of opportunities for self-directed learning to stay abreast of the latest developments in the field of computer science.
-                                    Expected graduation date reflects dedication to completing academic requirements while maintaining a commitment to excellence.</p>
+                                    Engaging in hands-on projects that apply theoretical concepts to real-world scenarios, fostering practical problem-solving skills.</p>
                                 </div>
                                 <hr />
                             </li>
@@ -35,11 +32,7 @@ const Education = () => {
                                 <div className="timeline-start md:text-end mb-10">
                                     <time className="font-mono italic">2021-2022</time>
                                     <div className="font-extrabold"><p>Higher Secondary Certificate (HSC)</p><p>Engineering University School & College</p></div>
-                                    <p className="text-sm">Successfully completed the Higher Secondary Certificate program with a focus on a well-rounded education at Engineering University School & College, Dhaka.
-                                    Achieved excellence in academic studies with a particular emphasis on mathematics, science, and computer science.
-                                    Participated in various science and technology-related competitions, showcasing a passion for innovation and problem-solving.
-                                    Actively engaged in extracurricular activities such as coding clubs, hackathons, or science fairs, demonstrating a commitment to practical application of knowledge.
-                                    Collaborated with classmates on projects, fostering teamwork and enhancing interpersonal skills.</p>
+                                    <p className="text-sm">Successfully completed the Higher Secondary Certificate program with a focus on a well-rounded education at Engineering University School & College, Dhaka.</p>
                                 </div>
                                 <hr />
                             </li>
@@ -51,10 +44,7 @@ const Education = () => {
                                 <div className="timeline-start md:text-end mb-10">
                                     <time className="font-mono italic">2020</time>
                                     <div className="font-extrabold"><p>Secondary School Certificate (SSC)</p><p>Dhaka Collegiate School, Dhaka</p></div>
-                                    <p className="text-sm">Successfully completed the SSC program with a specialization in Science from Dhaka Collegiate School.
-                                    Achieved outstanding academic performance, consistently earning honors.
-                                    Participated in various school competitions, Olympiads, or events, highlighting a passion for learning and intellectual challenges.
-                                    Developed strong interpersonal skills through teamwork on class projects and collaborative activities.</p>
+                                    <p className="text-sm">Successfully completed the SSC program with a specialization in Science from Dhaka Collegiate School.</p>
                                 </div>
                             </li>
                         </ul>
