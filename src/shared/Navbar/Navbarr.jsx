@@ -16,11 +16,18 @@ const drawerWidth = 240;
 
 function Navbarr(props) {
 
-    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+    const { window } = props;
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    const handleDrawerToggle = () => {
+        setMobileOpen((prevState) => !prevState);
+    };
+
+    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-6 font-permanent">
         <Link to="home" spy={true}
             smooth={true}
             offset={50}
-            duration={500} className="hover:text-[#c60678]">Home</Link>
+            duration={500} className="hover:text-[#c60678] mt-6 md:mt-0">Home</Link>
         <Link to="about" spy={true}
             smooth={true}
             offset={50}
@@ -43,17 +50,10 @@ function Navbarr(props) {
             duration={500} className="hover:text-[#c60678]">Contact</Link>
     </div>
 
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                THE GLASS HOUSE
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
+            <Typography sx={{ my: 2 }}>
+            <div className='font-permanent text-3xl text-black flex items-center justify-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
             </Typography>
             <Divider />
             <List>
@@ -69,7 +69,7 @@ function Navbarr(props) {
             <CssBaseline />
             <AppBar
                 position="fixed" sx={{ backgroundColor: "#1515154D" }} component="nav">
-                <Container maxWidth="2xl">
+                <Container maxWidth="xl">
                     <Toolbar>
                         <IconButton
                             color="inherit"
@@ -85,7 +85,7 @@ function Navbarr(props) {
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                         >
-                            <img className='w-[160px]' src="https://shantaholdings.com/admin/settings_images/Shanta-holdings-logo-white-1678170808.svg" alt="" />
+                            <div className='font-permanent text-3xl text-white flex items-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
                         </Typography>
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             {navLinks}

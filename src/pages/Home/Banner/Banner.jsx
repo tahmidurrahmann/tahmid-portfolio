@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
 
     return (
-        <div className="background" id="home">
+        <div className="background -mt-20" id="home">
             <div className="max-w-screen-xl mx-auto min-h-screen">
                 <div className="flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-16 xl:gap-60 py-24 lg:py-56">
                     <div className="space-y-6 lg:w-3/4 px-16 lg:px-4">
