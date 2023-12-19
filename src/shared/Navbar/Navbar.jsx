@@ -23,7 +23,7 @@ function Navbar(props) {
         setMobileOpen((prevState) => !prevState);
     };
 
-    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-6 font-permanent">
+    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-6 font-permanent text-white">
         <Link to="home" spy={true}
             smooth={true}
             offset={50}
@@ -51,9 +51,9 @@ function Navbar(props) {
     </div>
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor : "#000", height : "100vh"}}>
             <Typography sx={{ my: 2 }}>
-            <div className='font-permanent text-3xl text-black flex items-center justify-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
+            <div className='font-permanent text-3xl text-white flex items-center justify-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
             </Typography>
             <Divider />
             <List>
