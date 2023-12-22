@@ -7,7 +7,7 @@ const Banner = () => {
 
     return (
         <div className="background -mt-20" id="home">
-            <div className="max-w-screen-xl mx-auto min-h-screen">
+            <div className="max-w-screen-xl mx-auto lg:min-h-screen">
                 <div className="flex flex-col lg:flex-row justify-evenly items-center gap-8 lg:gap-16 xl:gap-60 py-24 lg:py-56">
                     <div className="space-y-6 lg:w-3/4 px-16 lg:px-4">
                         <motion.div initial={{ y: -150 }} animate={{ y: 0 }} transition={{ duration: "2", delay: "0" }} className="text-xl md:text-4xl font-extrabold text-white">Hello, I'm <br /><span className="text-2xl  lg:text-6xl">Tahmidur Rahman</span></motion.div>
@@ -29,7 +29,7 @@ const Banner = () => {
                             repeat={Infinity}
                         />
                         <div>
-                            <a href="https://drive.google.com/uc?export=download&id=1NPhKIDAE5h4kkZcy31spv9MEY7Wb_Kqq" className="butn"><i className="animation"></i>Download Resume <GrDownload /><i className="animation"></i>
+                            <a href="https://drive.google.com/uc?export=download&id=1NPhKIDAE5h4kkZcy31spv9MEY7Wb_Kqq " className="butn"><i className="animation"></i>Download Resume <GrDownload /><i className="animation"></i>
                             </a>
                         </div>
                     </div>
