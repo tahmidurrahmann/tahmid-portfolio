@@ -29,7 +29,7 @@ const Banner = () => {
                             repeat={Infinity}
                         />
                         <div>
-                            <a href="https://drive.google.com/uc?export=download&id=1WxNCvxwjUAi9b2UrOzNN9MIAayT5QcEO2G8J6K1uU8w" className="butn"><i className="animation"></i>Download Resume <GrDownload /><i className="animation"></i>
+                            <a rel="noreferrer" target="_blank" href="https://drive.google.com/uc?export=download&id=1auWBxGD4iXvSUjjy6beBSYSY613ll9zh"  className="butn"><i className="animation"></i>Download Resume <GrDownload /><i className="animation"></i>
                             </a>
                         </div>
                     </div>
