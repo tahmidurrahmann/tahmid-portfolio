@@ -1,120 +1,69 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import {  Container } from '@mui/material';
-import { Link } from 'react-scroll';
+import { useState } from "react";
+import Drawer from "./Drawer";
+import "./styles.css";
+import { CiMenuFries } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+import { Link } from "react-scroll";
+const NavBar = () => {
 
-const drawerWidth = 240;
+    const [isOpen, setIsOpen] = useState(false);
 
-function Navbar(props) {
-
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-
-    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-6 font-permanent text-white">
-        <Link to="home" spy={true}
+    const navLinks = <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-6 font-permanent text-white ml-32 py-24 md:py-0 md:ml-0">
+        <Link onClick={() => setIsOpen(false)} to="home" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678] mt-6 md:mt-0">Home</Link>
-        <Link to="about" spy={true}
+        <Link onClick={() => setIsOpen(false)} to="about" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678]">About</Link>
-        <Link to="skills" spy={true}
+        <Link onClick={() => setIsOpen(false)} to="skills" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678]">Skills</Link>
-        <Link to="projects" spy={true}
+        <Link onClick={() => setIsOpen(false)} to="projects" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678]">Projects</Link>
-        <Link to="education" spy={true}
+        <Link onClick={() => setIsOpen(false)} to="education" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678]">Education</Link>
-        <Link to="contact" spy={true}
+        <Link onClick={() => setIsOpen(false)} to="contact" spy={true}
             smooth={true}
             offset={50}
             duration={500} className="hover:text-[#c60678]">Contact</Link>
     </div>
 
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor : "#000", height : "100vh"}}>
-            <Typography sx={{ my: 2 }}>
-            <div className='font-permanent text-3xl text-white flex items-center justify-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
-            </Typography>
-            <Divider />
-            <List>
-                {navLinks}
-            </List>
-        </Box>
-    );
-
-    const container = window !== undefined ? () => window().document.body : undefined;
-
     return (
-        <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
-            <AppBar
-                position="fixed" sx={{ backgroundColor: "#1515154D" }} component="nav">
-                <Container maxWidth="xl">
-                    <Toolbar>
-                        <IconButton
-                            color="inherit"
-                            aria-label="open drawer"
-                            edge="start"
-                            onClick={handleDrawerToggle}
-                            sx={{ mr: 2, display: { sm: 'none' } }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Typography
-                            variant="h6"
-                            component="div"
-                            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-                        >
-                            <div className='font-permanent text-3xl text-white flex items-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
-                        </Typography>
-                        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+        <div className="fixed z-10 w-full bg-[#1515154D]">
+            <div className="max-w-screen-2xl mx-auto my-3">
+                <div className="flex justify-between items-center px-4 xl:px-0">
+                    <div className="flex gap-1">
+                        <div className='font-permanent text-3xl text-white flex items-center'><img className="w-[60px]" src="https://i.ibb.co/3BPbCfh/21904da7d079ccffa6b95ecfc6f7bbb7-1.png" alt="" />Tahmid</div>
+                    </div>
+                    <div className="hidden md:flex gap-4">
+                        {navLinks}
+                    </div>
+                    <button className="flex md:hidden" type="button" onClick={() => setIsOpen(!isOpen)}>
+                        <CiMenuFries />
+                    </button>
+                    <Drawer
+                        isOpen={isOpen}
+                        onClose={() => setIsOpen(false)}
+                        position="right"
+                    >
+                        <div className="demo-content">
+                            <button type="button" className="hover:scale-105 text-white hover:bg-gray-400 rounded-lg" onClick={() => setIsOpen(false)}>
+                                <IoMdClose size={30} />
+                            </button>
                             {navLinks}
-                        </Box>
-                    </Toolbar>
-                </Container>
-            </AppBar>
-            <nav>
-                <Drawer
-                    container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                >
-                    {drawer}
-                </Drawer>
-            </nav>
-            <Box component="main">
-                <Toolbar />
-            </Box>
-        </Box>
+                        </div>
+                    </Drawer>
+                </div>
+            </div>
+        </div>
     );
-}
+};
 
-export default Navbar;
+export default NavBar;
